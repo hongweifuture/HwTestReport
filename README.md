@@ -8,9 +8,18 @@
 - 增加`返回顶部`按钮
 - 其他细节修改
 
-源自 [tungwaiyip.info](http://tungwaiyip.info/software/HTMLTestRunner.html) 的`0.82`版本	`HTMLTestRunner`
+源自 [tungwaiyip.info](http://tungwaiyip.info/software/HTMLTestRunner.html) 的`0.82`版本 `HTMLTestRunner`
 
-## 中英文报告
+## 当前的环境
+环境| 版本
+-|-
+Python2  |2.7.17
+Python3  | 3.7.4
+selenium    |3.141.0
+geckodriver   |v0.26.0
+Firefox   |72.0.1 (64 位)
+
+## 中英文报告实例
 ```python
 import unittest
 # 中文 Chinese
@@ -79,13 +88,13 @@ if __name__ == "__main__":
                                 tester='Johnny')
         runner.run(suite)
 ```
-## 带截图的报告
-此截图功能是针对 [Selenium](https://selenium.dev/downloads/)和 `Appium` 开发，支持`Python2`和`Python3`，不同的浏览器选择不同驱动
+## 带截图的报告实例
+此截图功能是针对 [Selenium](https://selenium.dev/downloads/)和 [Appium](http://appium.io/)开发，支持`Python2`和`Python3`，不同的浏览器选择不同驱动
 
 - Selenium
   ```
   pip install selenium
-  conda install -n python3 selenium
+  conda install selenium
   ```
 
 - `Firefox`
@@ -103,32 +112,22 @@ if __name__ == "__main__":
 - [Edge浏览器驱动MicrosoftWebDriver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/)
 - [Opera浏览器驱动operadriver](https://github.com/operasoftware/operachromiumdriver/releases)
 - [PhantomJS浏览器驱动：phantomjs](https://phantomjs.org/)
-  > selenium已经放弃PhantomJS，使用需将selenium降级为2.48.0版本，或者使用火狐或者谷歌无界面浏览器，推荐[Headless Chrome](https://developers.google.com/web/updates/2017/04/headless-chrome)，还是要了解一下[Headless Firefox](https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Headless_mode)
+  > selenium已经放弃PhantomJS，使用需将`selenium`降级为`2.48.0`版本，或者使用火狐或者谷歌无界面浏览器，推荐[Headless Chrome](https://developers.google.com/web/updates/2017/04/headless-chrome)，还是要了解一下[Headless Firefox](https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Headless_mode)
 
-驱动需要放在和python启动文件在同一个目录，或添加环境变量，如
+驱动需要放在和`python`启动文件在同一个目录，或添加环境变量，如
 - windows："D:\python\venv\Scripts\geckodriver.exe"
 - linux："/opt/python/geckodriver.exe"
 
-## 当前的环境
-环境| 版本
--|-
-Python2  |2.7.17
-Python3  | 3.7.4
-selenium    |3.141.0
-geckodriver   |v0.26.0
-Firefox   |72.0.1 (64 位)
-
-## 使用
+### 截图功能使用
 
 1. **增加 `images` 参数**，默认为`False`，所以不需要截图可以不添加此参数，参考上面
-2. 初始化imgs，必须为driver
+2. 初始化`imgs`，必须为`driver`
    ```
     def setUp(self):
         self.imgs=[]  # （可选）初始化截图列表
         self.driver = webdriver.Firefox()
    ```
 
-实例
 ```python
 import unittest
 from HwTestReport import HTMLTestReport
@@ -265,3 +264,10 @@ title|标题，不填默认为“测试报告”
 description|描述，不填默认为空
 tester|测试人员，不填默认为“Johnny”
 
+
+## 预览
+![](https://cdn.jsdelivr.net/gh/hongweifuture/jsDelivrCDN/project/20200114102603.png)
+
+![](https://cdn.jsdelivr.net/gh/hongweifuture/jsDelivrCDN/project/20200114102851.png)
+
+![](https://cdn.jsdelivr.net/gh/hongweifuture/jsDelivrCDN/project/20200114113514.png)
