@@ -311,9 +311,9 @@ a.popup_link:hover {
         </h1>
         <div style="float:left;width:50%;">
             <p class='parameters'> <p class='attribute'><strong>Tester:</strong> Johnny</p>
-<p class='attribute'><strong>Start Time:</strong> 2020-01-13 15:48:56</p>
-<p class='attribute'><strong>Duration:</strong> 0:01:56.284730</p>
-<p class='attribute'><strong>Status:</strong> All 5  Pass 3 Failed 1 Error 1  Passing Rate:60.0%</p>
+<p class='attribute'><strong>Start Time:</strong> 2020-01-20 09:42:53</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:00.001996</p>
+<p class='attribute'><strong>Status:</strong> All 6  Pass 2 Failed 2 Error 2  Passing Rate:33.3%</p>
 </p>
             <br>
             <br>
@@ -351,44 +351,21 @@ a.popup_link:hover {
 </tr>
 
 <tr class='errorClass'>
-    <td>Case_baidu</td>
-    <td>5</td>
+    <td>Case_assert_1</td>
     <td>3</td>
     <td>1</td>
     <td>1</td>
-    <td><a href="javascript:showClassDetail('c1',5)">Details</a></td>
+    <td>1</td>
+    <td><a href="javascript:showClassDetail('c1',3)">Details</a></td>
 </tr>
 
-<tr id='et1_1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_baidu_assert_error: '用例错误，带有指定错误内容和截图</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_et1_1')" >
-        error</a>
-
-    <div id='div_et1_1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_et1_1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-et1_1: Traceback (most recent call last):
-  File "D:/PyProject/HwHtmlTestReport/python/test_unittest_HwTestReport_Selenium.py", line 77, in test_baidu_assert_error
-    raise EnvironmentError('Current environment can not testing!')
-OSError: Current environment can not testing!
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
+<tr id='pt1_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_ok</div></td>
+    <td colspan='5' align='center'>pass</td>
 </tr>
 
 <tr id='ft1_2' class='none'>
-    <td class='failCase'><div class='testcase'>test_baidu_assert_faile: 用例失败，带有失败内容和截图</div></td>
+    <td class='failCase'><div class='testcase'>test_faile</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -402,14 +379,10 @@ OSError: Current environment can not testing!
         </div>
         <pre>
         
-ft1_2: 新闻
-Traceback (most recent call last):
-  File "D:/PyProject/HwHtmlTestReport/python/test_unittest_HwTestReport_Selenium.py", line 71, in test_baidu_assert_faile
-    self.assertEqual(news, 'hao123')
-AssertionError: '新闻' != 'hao123'
-- 新闻
-+ hao123
-
+ft1_2: Traceback (most recent call last):
+  File "D:/pygit/HwTestReport/test_unittest_HwTestReport.py", line 31, in test_faile
+    self.assertEqual(1,2)
+AssertionError: 1 != 2
 
 
         </pre>
@@ -419,22 +392,25 @@ AssertionError: '新闻' != 'hao123'
     </td>
 </tr>
 
-<tr id='pt1_3' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_baidu_assert_ok: 用例通过，有报告内容，有截图</div></td>
+<tr id='et1_3' class='none'>
+    <td class='errorCase'><div class='testcase'>test_error</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1_3')" >
-        pass</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_et1_3')" >
+        error</a>
 
-    <div id='div_pt1_3' class="popup_window">
+    <div id='div_et1_3' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1_3').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_et1_3').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt1_3: hao123
+et1_3: Traceback (most recent call last):
+  File "D:/pygit/HwTestReport/test_unittest_HwTestReport.py", line 34, in test_error
+    raise Exception
+Exception
 
 
         </pre>
@@ -444,44 +420,102 @@ pt1_3: hao123
     </td>
 </tr>
 
-<tr id='pt1_4' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_baidu_assert_ok_noimg: 用例通过，有报告内容，没有截图</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1_4')" >
-        pass</a>
-
-    <div id='div_pt1_4' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1_4').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt1_4: 新闻
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
+<tr class='passClass'>
+    <td>Case_assert_2</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c2',1)">Details</a></td>
 </tr>
 
-<tr id='pt1_5' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_baidu_search: 用例通过，没有报告内容，有多张截图</div></td>
+<tr id='pt2_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_ok</div></td>
     <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr class='errorClass'>
+    <td>Case_assert_3</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td><a href="javascript:showClassDetail('c3',1)">Details</a></td>
+</tr>
+
+<tr id='et3_1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_error</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_et3_1')" >
+        error</a>
+
+    <div id='div_et3_1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_et3_1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+et3_1: Traceback (most recent call last):
+  File "D:/pygit/HwTestReport/test_unittest_HwTestReport.py", line 52, in test_error
+    raise Exception
+Exception
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='failClass'>
+    <td>Case_assert_4</td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c4',1)">Details</a></td>
+</tr>
+
+<tr id='ft4_1' class='none'>
+    <td class='failCase'><div class='testcase'>test_faile</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft4_1')" >
+        fail</a>
+
+    <div id='div_ft4_1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft4_1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft4_1: Traceback (most recent call last):
+  File "D:/pygit/HwTestReport/test_unittest_HwTestReport.py", line 61, in test_faile
+    self.assertEqual(1,3)
+AssertionError: 1 != 3
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
 </tr>
 
 <tr id='total_row'>
     <td>Total</td>
-    <td>5</td>
-    <td>3</td>
-    <td>1</td>
-    <td>1</td>
-    <td>Passing rate：60.0%</td>
-    <td>&nbsp;</td>
+    <td>6</td>
+    <td>2</td>
+    <td>2</td>
+    <td>2</td>
+    <td>Passing rate：33.3%</td>
+
 </tr>
 </table>
 
@@ -523,9 +557,9 @@ pt1_4: 新闻
                             radius : '60%',
                             center: ['50%', '60%'],
                             data:[
-                                {value:3, name:'pass'},
-                                {value:1, name:'fail'},
-                                {value:1, name:'error'}
+                                {value:2, name:'pass'},
+                                {value:2, name:'fail'},
+                                {value:2, name:'error'}
                             ],
                             itemStyle: {
                                 emphasis: {

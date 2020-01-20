@@ -258,7 +258,7 @@ HTMLTestReport_local.py| 离线源文件
 HTMLTestReport| 生成中文报告的类
 HTMLTestReportEN| 生成英文报告的类
 stream| 生成的报告文件
-verbosity| 运行之后打印的格式，默认值为1，有0-6级，2是指测试结果的输出的详细程度，源码在/Lib/unittest/runner.py
+verbosity| 运行之后打印的格式，默认值为1，有0，1，2三个值，<br>0 (静默模式): 你只能获得总的测试用例数和总的结果 比如 总共100个 失败20 成功80<br>)1 (默认模式): 非常类似静默模式 只是在每个成功的用例前面有个“.” 每个失败的用例前面有个 “F”<br>2 (详细模式):测试结果会显示每个测试用例的所有相关的信息,并且你在命令行里加入不同的参数可以起到一样的效果，<br>源码在/Lib/unittest/runner.py
 images|True 为开启Selenium或Appium截图，False或不填为关闭截图模式
 title|标题，不填默认为“测试报告”
 description|描述，不填默认为空
@@ -271,3 +271,4 @@ tester|测试人员，不填默认为“Johnny”
 ![](https://cdn.jsdelivr.net/gh/hongweifuture/jsDelivrCDN/project/20200114102851.png)
 
 ![](https://cdn.jsdelivr.net/gh/hongweifuture/jsDelivrCDN/project/20200114113514.png)
+

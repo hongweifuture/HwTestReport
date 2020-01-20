@@ -70,7 +70,7 @@ if __name__ == "__main__":
     suite.addTest(Case_assert_4('test_faile'))
 
     with open('./HwTestReport.html', 'wb') as report:
-        runner = HTMLTestReport(stream=report,
+        runner = HTMLTestReportEN(stream=report,
                                 verbosity=2,
                                 title='HwTestReport 测试',
                                 description='带截图，带饼图，带详情',

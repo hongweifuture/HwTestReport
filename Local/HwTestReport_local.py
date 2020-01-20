@@ -72,10 +72,10 @@ class Template_CN(object):
     <meta name="generator" content="%(generator)s"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     
-    <link href="./static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
 
     %(stylesheet)s
-    <script src="./static/js/echarts.common.min.js"></script>
+    <script src="https://cdn.bootcss.com/echarts/3.8.5/echarts.common.min.js"></script>
 
 </head>
 <body>
@@ -1114,7 +1114,7 @@ a.popup_link:hover {
     <td>%(fail)s</td>
     <td>%(error)s</td>
     <td>Passing rate：%(passrate)s</td>
-    <td>&nbsp;</td>
+
 </tr>
 </table>
 """ # variables: (test_list, count, Pass, fail, error)
@@ -1148,13 +1148,13 @@ a.popup_link:hover {
 </tr>
 %(test_list)s
 <tr id='total_row'>
-<td>Total</td>
-<td>%(count)s</td>
-<td>%(Pass)s</td>
-<td>%(fail)s</td>
-<td>%(error)s</td>
-<td>Passing rate：%(passrate)s</td>
-<td>&nbsp;</td>
+    <td>Total</td>
+    <td>%(count)s</td>
+    <td>%(Pass)s</td>
+    <td>%(fail)s</td>
+    <td>%(error)s</td>
+    <td>Passing rate：%(passrate)s</td>
+    <td>&nbsp;</td>
 </tr>
 </table>
 """ # variables: (test_list, count, Pass, fail, error)

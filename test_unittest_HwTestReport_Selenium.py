@@ -124,7 +124,7 @@ if __name__ == "__main__":
 
     # HTMLTestReport or HTMLTestReportEN
     with open('./HwTestReportIMG.html', 'wb') as report:
-        runner = HTMLTestReport(stream=report,
+        runner = HTMLTestReportEN(stream=report,
                                 verbosity=2,
                                 images=True,
                                 title='HwTestReport 测试',

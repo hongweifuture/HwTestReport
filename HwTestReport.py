@@ -1114,7 +1114,7 @@ a.popup_link:hover {
     <td>%(fail)s</td>
     <td>%(error)s</td>
     <td>Passing rate：%(passrate)s</td>
-    <td>&nbsp;</td>
+
 </tr>
 </table>
 """ # variables: (test_list, count, Pass, fail, error)
@@ -1148,13 +1148,13 @@ a.popup_link:hover {
 </tr>
 %(test_list)s
 <tr id='total_row'>
-<td>Total</td>
-<td>%(count)s</td>
-<td>%(Pass)s</td>
-<td>%(fail)s</td>
-<td>%(error)s</td>
-<td>Passing rate：%(passrate)s</td>
-<td>&nbsp;</td>
+    <td>Total</td>
+    <td>%(count)s</td>
+    <td>%(Pass)s</td>
+    <td>%(fail)s</td>
+    <td>%(error)s</td>
+    <td>Passing rate：%(passrate)s</td>
+    <td>&nbsp;</td>
 </tr>
 </table>
 """ # variables: (test_list, count, Pass, fail, error)
