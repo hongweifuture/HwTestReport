@@ -270,5 +270,5 @@ tester|测试人员，不填默认为“Johnny”
 
 ![](https://cdn.jsdelivr.net/gh/hongweifuture/jsDelivrCDN/project/20200114102851.png)
 
-![](https://cdn.jsdelivr.net/gh/hongweifuture/jsDelivrCDN/project/20200114113514.png)
+![](https://cdn.jsdelivr.net/gh/hongweifuture/jsDelivrCDN/project/20200120103725.png)
 
