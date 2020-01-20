@@ -1,3 +1,5 @@
+> 基于`Python`的`unittest`单元测试报告美化
+
 作为 [HwTTK（Test Tool Kit ）](https://github.com/hongweifuture/HwTTK)中的一员，`HwTestReport`具有以下特性：
 - 支持`Python2`和`Python3`，自动兼容，无需设置
 - 支持`中文`和`英文`手动切换
